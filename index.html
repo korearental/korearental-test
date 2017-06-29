@@ -1,6 +1,31 @@
+---
+layout: default
+---
 
-<div>
-  <p> This is a test... </p>
+
+ <div class="post-container">
+
+  <h2 class="post-title">Blog</h2>
+
   <hr>
-  <h3> Theme?? </h3>
-  
+
+  {% for post in site.posts %}
+    <div class ="post-preview">
+      <span class="post-title">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </span>
+
+      <span class="post-time">
+        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+      </span>
+
+
+    </div>
+
+    {% endfor %}
+
+
+
+</div>
