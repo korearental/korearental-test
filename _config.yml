@@ -7,14 +7,5 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # Sidebar settings
 description: One sentence introducing yourself or what you do
 
-# Social icons
-facebook: username
-linkedin: username
-github: username
-deviantart: username
-codepen: username
-
-footer: © Taken theme
-
 # Build settings
 markdown: kramdown
